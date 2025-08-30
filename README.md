@@ -23,3 +23,14 @@ PostgreSQL: 쿼리 실행, 결과 반환 <br/>
 | 프론트엔드 페이지 | API 엔드포인트       | 백엔드 컨트롤러 | 데이터베이스 테이블 |
 | ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
 | /class | GET /api/posts/category/class            | PostsController.findByCategory | posts + categories |
+| ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
+| /deliciousGET | /api/posts/category/delicious | PostsController.findByCategory | posts + categories |
+| ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
+| /guitarGET | /api/posts/category/guitar | PostsController.findByCategory | posts + categories |
+| ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
+| /class/{id}GET | /api/posts/{id} | PostsController.findOne | posts + categories | 
+| ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
+| /(메인페이지)GET | /api/documentsDocumentsController.findAll | documents + categories | 
+| ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
+| /{docId}GET | /api/documents/{id}Documents | Controller.findOne | documents + sections |
+| ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
