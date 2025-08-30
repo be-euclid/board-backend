@@ -4,8 +4,10 @@ import { Post } from '../entities/post.entity';
 import { Document } from '../entities/document.entity';
 import { Section } from '../entities/section.entity';
 import { Category } from '../entities/category.entity';
+import { DataSourceOptions } from 'typeorm';
 
-export const getDatabaseConfig = (configService: ConfigService): TypeOrmModuleOptions => ({
+
+export const getDatabaseConfig = (configService: ConfigService): DataSourceOptions => ({
   type: 'postgres',
   host: configService.get('DB_HOST', 'localhost'),
   port: +configService.get('DB_PORT', 5432),
