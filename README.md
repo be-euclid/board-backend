@@ -30,6 +30,6 @@ PostgreSQL: 쿼리 실행, 결과 반환 <br/>
 | ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
 | /class/{id} | GET /api/posts/{id} | PostsController.findOne | posts + categories | 
 | ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
-| /(메인페이지) | GET /api/documentsDocumentsController.findAll | documents + categories | 
+| /(메인페이지) | GET /api/documentsDocuments | Controller.findAll | documents + categories | 
 | ----------------- | ----------------------------------- | ----------------------- | --------------------- | 
 | /{docId} | GET /api/documents/{id}Documents | Controller.findOne | documents + sections |
